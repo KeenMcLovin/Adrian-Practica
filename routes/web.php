@@ -18,3 +18,10 @@ Route::get('/', function () {
 Route::get('layout', function() {
     return view('welcome layout');
 });
+
+Route::get('helloworld', function() {
+    return view('welcome layout');
+});
+
+
+Route::resource('/helloworld', 'Materias/controllerMaterias@index');

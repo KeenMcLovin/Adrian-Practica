@@ -12,9 +12,22 @@ class controllerMaterias extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    
+    public function getAlumnos(){
+        $Alumnos = array (
+            'nombre',
+            'apellido',
+            'email',
+            'edad'
+        );
+        return response()->json($Alumnos);
+    }
+
     public function index()
     {
         //
+
+        return view('helloworld');
     }
 
     /**

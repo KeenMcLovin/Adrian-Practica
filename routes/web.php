@@ -23,5 +23,6 @@ Route::get('helloworld', function() {
     return view('welcome layout');
 });
 
-
 Route::resource('/helloworld', 'Materias/controllerMaterias@index');
+
+Route::get('/miprimerarray','Materias\controllerMaterias@getAlumnos')->name('alumnos');

@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 class Alumno extends Model{
-	public static  function validationRules(){
+	public static function validationRules(){
 		return[
 			'nombre' 	=> 'requeried| min:5 |max:50',
 			'apellido' 	=> 'nullable| min:5 |max:50',

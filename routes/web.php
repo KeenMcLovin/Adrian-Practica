@@ -26,3 +26,8 @@ Route::get('helloworld', function() {
 Route::resource('/helloworld', 'Materias/controllerMaterias@index');
 
 Route::get('/miprimerarray','Materias\controllerMaterias@getAlumnos')->name('alumnos');
+
+Route::group(['prefix'=>'api'], function(){
+    Route::apiResource('materias', 'Materias\MateriasController');
+    Route::apiResource('alumno', 'controllerAlumno@store');
+});

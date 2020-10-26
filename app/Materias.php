@@ -7,7 +7,7 @@ use Illuminate\Notifications\Notifiable;
 
 class Materias extends Model{
 
-    use Notificable;
+    use Notifiable;
 
 	protected $fillable = (
         'nombre'

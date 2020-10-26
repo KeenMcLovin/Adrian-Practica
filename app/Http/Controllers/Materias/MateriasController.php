@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Materias;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-use App\Mayerias;
+use App\Materias;
 
 class MateriasController extends Controller
 {
@@ -51,6 +51,9 @@ class MateriasController extends Controller
     public function show($id)
     {
         //
+        $materia = Materias::find($id);
+
+        return $materia;
     }
 
     /**

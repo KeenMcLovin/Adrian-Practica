@@ -31,3 +31,9 @@ Route::group(['prefix'=>'api'], function(){
     Route::apiResource('materias', 'Materias\MateriasController');
     Route::apiResource('alumno', 'controllerAlumno@store');
 });
+
+Route::get('formulario', function () {
+    return view('formulario');
+});
+
+Route::post('/', 'PracticaController@store')->name('registro');

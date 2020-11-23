@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Practica;
+use App\Alumno;
 use Illuminate\Http\Request;
 
-class PracticaController extends Controller
+class AlumnoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -35,21 +35,16 @@ class PracticaController extends Controller
      */
     public function store(Request $request)
     {
-        $registro = new \App\Practica;
-        $registro->nombre = $request->nombre;
-        $registro->tipo = $request->tipo;
-        $registro->materia = $request->materia;
-        $registro->save();
-        return response()->json($registro);
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Practica  $practica
+     * @param  \App\Alumno  $alumno
      * @return \Illuminate\Http\Response
      */
-    public function show(Practica $practica)
+    public function show(Alumno $alumno)
     {
         //
     }
@@ -57,10 +52,10 @@ class PracticaController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Practica  $practica
+     * @param  \App\Alumno  $alumno
      * @return \Illuminate\Http\Response
      */
-    public function edit(Practica $practica)
+    public function edit(Alumno $alumno)
     {
         //
     }
@@ -69,23 +64,22 @@ class PracticaController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Practica  $practica
+     * @param  \App\Alumno  $alumno
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Practica $id){
-        $id->update($request->all());
-        return response()->json($id);
+    public function update(Request $request, Alumno $alumno)
+    {
+        //
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Practica  $practica
+     * @param  \App\Alumno  $alumno
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Alumno $alumno)
     {
-        Practica::destroy($id);
-        return 'Registro eliminado';
+        //
     }
 }

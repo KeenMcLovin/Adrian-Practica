@@ -83,8 +83,9 @@ class PracticaController extends Controller
      * @param  \App\Practica  $practica
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Practica $practica)
+    public function destroy(Practica $id)
     {
-        //
+        Practica::destroy($id);
+        return $id;
     }
 }

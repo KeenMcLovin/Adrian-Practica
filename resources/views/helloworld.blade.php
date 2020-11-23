@@ -6,6 +6,6 @@
 	<title>Hola mundo</title>
 </head>
 <body>
-	<h1>Hola mundo desde una vista en laravel</h1>
+	Registro eliminado
 </body>
 </html>

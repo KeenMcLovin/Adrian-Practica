@@ -36,4 +36,10 @@ Route::get('formulario', function () {
     return view('formulario');
 });
 
+Route::get('lml', function () {
+    return 'Registro eliminado';
+});
+
 Route::post('/', 'PracticaController@store')->name('registro');
+
+Route::delete('/eliminar/{id}', 'PracticaController@destroy')->name('delete');
